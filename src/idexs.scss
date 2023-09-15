@@ -1,0 +1,33 @@
+@import 'styles/clear';
+@import 'styles/variables';
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-family: 'Merienda', cursive;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #ffffff;
+	color: $dark;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+h1 {
+	display: none;
+}
+
+h3 {
+	padding-top: 80px;
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+}
+
+h5 {
+	color: $dark;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: normal;
+  padding-top: 10px;
+}
