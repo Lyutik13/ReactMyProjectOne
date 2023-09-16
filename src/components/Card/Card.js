@@ -6,12 +6,12 @@ function Card({ imageUrl, name, price }) {
 			<div className={styles.card__imgWrapper}>
 				<img
 					className={styles.card__img}
-					src="img/card/best3-min.jpg"
+					src={imageUrl}
 					alt="imgCoffee"
 				/>
 			</div>
-			<h5>Solimo Coffee Beans 2 kg</h5>
-			<b>15.99$</b>
+			<h5>{name}</h5>
+			<b>{price}$</b>
 		</div>
 	)
 }

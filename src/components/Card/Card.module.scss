@@ -1,11 +1,17 @@
-@import '../../../styles/variables';
+@import '../../styles/variables';
 
 .card {
 	width: 180px;
-	height: 240px;
+	height: 200px;
 	border-radius: 8px;
 	background: rgba(255, 255, 255, 0.65);
-  padding: 0 20px;
+	padding: 20px;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		border: 10px $dark;
+		box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.562);
+		transform: translateY(-5px);
+	}
 	&__img {
 		object-fit: cover;
 		max-width: 100%;
@@ -15,19 +21,18 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		padding-top: 20px;
 		margin: 0 auto;
 		width: 168px;
 		height: 138px;
 	}
 	b {
-    display: block;
-    padding-top: 10px;
+		display: block;
+		padding-top: 10px;
 		color: $dark;
 		text-align: center;
 		font-size: 14px;
 		font-weight: 700;
 		line-height: normal;
-    text-align: right;
+		text-align: right;
 	}
 }
