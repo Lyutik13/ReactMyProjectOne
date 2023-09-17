@@ -1,1 +1,11 @@
 @import '../../styles/variables';
+
+.footer {
+	min-height: 130px;
+	background-color: $white;
+  padding-bottom: 20px;
+}
+
+.pt10 {
+	padding-top: 10px;
+}
