@@ -1,5 +1,5 @@
-import CoffeLine from '../CoffeLine/CoffeLine'
-import Card from '../Card/Card'
+import CoffeLine from '../../CoffeLine/CoffeLine'
+import Card from '../../Card/Card'
 
 import styles from './Home.module.scss'
 

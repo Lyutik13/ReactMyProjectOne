@@ -1,4 +1,4 @@
-@import '../../styles/variables';
+@import '../../../styles/variables';
 
 .aboutUs {
 	min-height: 520px;
@@ -20,7 +20,7 @@
 .ourBest {
 	padding-bottom: 110px;
 	min-height: 385px;
-	background: url(../../../public/img/ourBest-min.jpg) center center/cover;
+	background: url(../../../../public/img/ourBest-min.jpg) center center/cover;
 }
 
 .cardWrapper {

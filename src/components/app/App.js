@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 
-import Home from '../Home/Home'
+import Home from '../pages/Home/Home'
 import CoffeLine from '../CoffeLine/CoffeLine'
 import Header from '../Header/Header'
 import Nav from '../Nav/Nav'
