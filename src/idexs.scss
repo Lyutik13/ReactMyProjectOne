@@ -29,5 +29,13 @@ h5 {
 	font-size: 14px;
 	font-weight: 400;
 	line-height: normal;
-  padding-top: 10px;
+	padding-top: 10px;
+}
+
+.line {
+  display: block;
+  padding-top: 59px;
+	width: 240px;
+  border-bottom: 1px solid $dark;
+  margin: 0 auto;
 }

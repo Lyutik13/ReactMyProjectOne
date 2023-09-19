@@ -1,8 +1,8 @@
 import styles from './Card.module.scss'
 
-function Card({ imageUrl, name, price }) {
+function Card({ imageUrl, name, country, price, home }) {
 	return (
-		<div className={styles.card}>
+		<div className={home ? `${styles.home} ${styles.card}` : `${styles.oll} ${styles.card}`}>
 			<div className={styles.card__imgWrapper}>
 				<img
 					className={styles.card__img}
@@ -11,6 +11,7 @@ function Card({ imageUrl, name, price }) {
 				/>
 			</div>
 			<h5>{name}</h5>
+			<div className={home ? `${styles.dn}` : `${styles.db}`}>{country}</div>
 			<b>{price}$</b>
 		</div>
 	)

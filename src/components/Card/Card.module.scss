@@ -1,15 +1,37 @@
 @import '../../styles/variables';
 
+.home {
+	height: 200px;
+	background: rgba(255, 255, 255, 0.65);
+}
+
+.oll {
+	height: 220px;
+	background: $white;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.dn {
+	display: none;
+}
+
+.db {
+	display: block;
+	padding-top: 10px;
+	text-align: end;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: normal;
+}
+
 .card {
 	width: 180px;
-	height: 200px;
 	border-radius: 8px;
-	background: rgba(255, 255, 255, 0.65);
 	padding: 20px;
 	transition: all 0.2s ease-in-out;
 	&:hover {
 		border: 10px $dark;
-		box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.562);
+		box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.945);
 		transform: translateY(-5px);
 	}
 	&__img {
