@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router'
 import axios from 'axios'
 
+import AppContext from '../../context'
 import Home from '../pages/Home/Home'
 import { OurCoffee } from '../pages/OurCoffee/OurCoffee'
 import CoffeLine from '../CoffeLine/CoffeLine'
@@ -14,6 +15,7 @@ import styles from './App.module.scss'
 function App() {
 	const [itemsBest, setItemsBest] = React.useState([])
 	const [itemsOll, setItemsOll] = React.useState([])
+	const [searchValue, setSearchValue] = React.useState('')
 
 	React.useEffect(() => {
 		async function fetcData() {
@@ -31,25 +33,23 @@ function App() {
 	}, [])
 
 	return (
-		<div className="wrapper">
-			<Routes>
-				<Route path="/" element={<Home bd={itemsBest} />} />
-			</Routes>
-      
-			<Routes>
-				<Route path="/ourCoffee" element={<OurCoffee bd={itemsOll} />} />
-			</Routes>
-			{/* <Home bd={itemsBest}></Home> */}
+		<AppContext.Provider value={{ searchValue, setSearchValue }}>
+			<div className="wrapper">
+				<Routes>
+					<Route path="/" element={<Home bd={itemsBest} />} />
+					<Route path="/ourCoffee" element={<OurCoffee bd={itemsOll} />} />
+				</Routes>
 
-			<footer className={styles.footer}>
-				<div className="container">
-					<Nav dark={true}></Nav>
-					<div className={styles.pt10}>
-						<CoffeLine dark={true}></CoffeLine>
+				<footer className={styles.footer}>
+					<div className="container">
+						<Nav dark={true}></Nav>
+						<div className={styles.pt10}>
+							<CoffeLine dark={true}></CoffeLine>
+						</div>
 					</div>
-				</div>
-			</footer>
-		</div>
+				</footer>
+			</div>
+		</AppContext.Provider>
 	)
 }
 

@@ -1,3 +1,6 @@
+import React from 'react'
+import AppContext from '../../../context'
+
 import Nav from '../../Nav/Nav'
 import CoffeLine from '../../CoffeLine/CoffeLine'
 import Search from '../../Search/Search'
@@ -6,6 +9,26 @@ import Card from '../../Card/Card'
 import styles from './OurCoffee.module.scss'
 
 export const OurCoffee = ({ bd }) => {
+	const { searchValue } = React.useContext(AppContext)
+
+	const renderItems = () => {
+		const filtredItems =
+			bd &&
+			bd.filter((item) =>
+				item.name.toLowerCase().includes(searchValue.toLowerCase())
+			)
+
+		return filtredItems.map((obj, index) => (
+			<Card
+				key={index}
+				imageUrl={obj.imageUrl}
+				name={obj.name}
+				country={obj.country}
+				price={obj.price}
+			/>
+		))
+	}
+
 	return (
 		<>
 			<header className={styles.header}>
@@ -41,17 +64,7 @@ export const OurCoffee = ({ bd }) => {
 
 					<Search></Search>
 
-					<div className={styles.aboutOurBeans__cards}>
-						{bd.map((obj, index) => (
-							<Card
-								key={index}
-								imageUrl={obj.imageUrl}
-								name={obj.name}
-                country={obj.country}
-								price={obj.price}
-							/>
-						))}
-					</div>
+					<div className={styles.aboutOurBeans__cards}>{renderItems()}</div>
 				</section>
 			</main>
 		</>

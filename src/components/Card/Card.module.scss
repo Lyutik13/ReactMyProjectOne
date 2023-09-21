@@ -31,7 +31,7 @@
 	transition: all 0.2s ease-in-out;
 	&:hover {
 		border: 10px $dark;
-		box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.945);
+		box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.719);
 		transform: translateY(-5px);
 	}
 	&__img {

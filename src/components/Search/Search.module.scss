@@ -4,18 +4,13 @@
 	padding-top: 60px;
 	display: flex;
 	column-gap: 80px;
-  justify-content: center;
-  align-items: center;
+	justify-content: center;
+	align-items: center;
 	&__lookiing {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		column-gap: 20px;
-		p {
-			font-size: 14px;
-			font-weight: 400;
-			line-height: normal;
-		}
 	}
 	&__block {
 		display: flex;
