@@ -16,6 +16,7 @@ function App() {
 	const [itemsBest, setItemsBest] = React.useState([])
 	const [itemsOll, setItemsOll] = React.useState([])
 	const [searchValue, setSearchValue] = React.useState('')
+	const [activeSearchBtn, setActiveSearchBtn] = React.useState(0)
 
 	React.useEffect(() => {
 		async function fetcData() {
@@ -23,17 +24,19 @@ function App() {
 				'https://65043c13c8869921ae24bc9d.mockapi.io/best'
 			)
 			const ollResponse = await axios.get(
-				'https://65043c13c8869921ae24bc9d.mockapi.io/oll'
+				`https://65043c13c8869921ae24bc9d.mockapi.io/oll?${activeSearchBtn > 0 ? `category=${activeSearchBtn}` : ''}`
 			)
 
 			setItemsBest(itemsResponse.data)
 			setItemsOll(ollResponse.data)
 		}
 		fetcData()
-	}, [])
+	}, [activeSearchBtn])
 
 	return (
-		<AppContext.Provider value={{ searchValue, setSearchValue }}>
+		<AppContext.Provider
+			value={{ searchValue, setSearchValue, activeSearchBtn, setActiveSearchBtn }}
+		>
 			<div className="wrapper">
 				<Routes>
 					<Route path="/" element={<Home bd={itemsBest} />} />
@@ -54,3 +57,5 @@ function App() {
 }
 
 export default App
+
+// React Pizza v2 23:57 

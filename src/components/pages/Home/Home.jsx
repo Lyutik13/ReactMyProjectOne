@@ -20,12 +20,12 @@ function Home({ bd }) {
 					</h3>
 					<h3 className={styles.white}>Want to try our beans?</h3>
 					<h3 className={styles.white}>I love my ZAYA</h3>
-					<button className={styles.btn}>More</button>
+					<a href='#aboutUs' className={styles.btn}>More</a>
 				</div>
 			</header>
 
 			<main className="main">
-				<section className={styles.aboutUs}>
+				<section id='aboutUs' className={styles.aboutUs}>
 					<div className="container">
 						<h3>About Us</h3>
 						<CoffeLine dark={true}></CoffeLine>

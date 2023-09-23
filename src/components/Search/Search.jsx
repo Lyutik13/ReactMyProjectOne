@@ -1,10 +1,12 @@
 import React from 'react'
 import AppContext from '../../context'
 
+import Categiries from './Categories'
 import styles from './Search.module.scss'
 
 function Search() {
-  const { searchValue,  setSearchValue} = React.useContext(AppContext)
+	const { searchValue, setSearchValue, activeSearchBtn, setActiveSearchBtn } =
+		React.useContext(AppContext)
 
 	return (
 		<div className={styles.search}>
@@ -18,13 +20,14 @@ function Search() {
 					/>
 				</div>
 			</div>
+
 			<div className={styles.search__filter}>
-				<div>Or filter</div>{' '}
-				<div className={styles.search__btns}>
-					<button>Brazil</button>
-					<button>Kenya</button>
-					<button>Columbia</button>
-				</div>
+				<div>Or filter</div>
+
+				<Categiries
+					value={activeSearchBtn}
+					onClickCategiry={(i) => setActiveSearchBtn(i)}
+				/>
 			</div>
 		</div>
 	)

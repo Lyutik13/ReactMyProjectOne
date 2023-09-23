@@ -55,7 +55,7 @@
 			&:nth-child(1) {
 				border-radius: 4px 0px 0px 4px;
 			}
-			&:nth-child(3) {
+			&:nth-child(4) {
 				border-radius: 0px 4px 4px 0px;
 			}
 			&:hover {
@@ -68,4 +68,9 @@
 			}
 		}
 	}
+}
+
+.activeBtn {
+  background-color: lighten($color: #a8a299e1, $amount: 5%) !important; 
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.466) !important;
 }
