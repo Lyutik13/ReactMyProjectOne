@@ -1,0 +1,28 @@
+@import '../../../styles/variables';
+@import '../OurCoffee/OurCoffee.module.scss';
+
+.imgWrapper {
+	width: 395px;
+	height: 355px;
+	img {
+		max-height: 100%;
+		max-width: 100%;
+		object-fit: cover;
+	}
+}
+
+.aboutOurBeans {
+	&__block {
+		text-align: left;
+		width: 420px;
+	}
+  p {
+    span {
+      font-weight: 700;
+    }
+    b {
+      font-size: 24px;
+      margin-left: 10px;
+    }
+  }
+}

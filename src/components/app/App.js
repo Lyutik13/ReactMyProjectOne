@@ -4,7 +4,9 @@ import axios from 'axios'
 
 import AppContext from '../../context'
 import Home from '../pages/Home/Home'
+import { OurCoffeeAbout } from '../pages/OurCoffeeAbout/OurCoffeeAbout'
 import { OurCoffee } from '../pages/OurCoffee/OurCoffee'
+import { ForYourPleasure } from '../pages/forYourPleasure/forYourPleasure'
 import CoffeLine from '../CoffeLine/CoffeLine'
 import Nav from '../Nav/Nav'
 
@@ -24,7 +26,9 @@ function App() {
 				'https://65043c13c8869921ae24bc9d.mockapi.io/best'
 			)
 			const ollResponse = await axios.get(
-				`https://65043c13c8869921ae24bc9d.mockapi.io/oll?${activeSearchBtn > 0 ? `category=${activeSearchBtn}` : ''}`
+				`https://65043c13c8869921ae24bc9d.mockapi.io/oll?${
+					activeSearchBtn > 0 ? `category=${activeSearchBtn}` : ''
+				}`
 			)
 
 			setItemsBest(itemsResponse.data)
@@ -35,12 +39,19 @@ function App() {
 
 	return (
 		<AppContext.Provider
-			value={{ searchValue, setSearchValue, activeSearchBtn, setActiveSearchBtn }}
+			value={{
+				searchValue,
+				setSearchValue,
+				activeSearchBtn,
+				setActiveSearchBtn,
+			}}
 		>
 			<div className="wrapper">
 				<Routes>
 					<Route path="/" element={<Home bd={itemsBest} />} />
 					<Route path="/ourCoffee" element={<OurCoffee bd={itemsOll} />} />
+					<Route path="/forYourPleasure" element={<ForYourPleasure bd={itemsOll} />} />
+					<Route path="/ourCoffeeAbout" element={<OurCoffeeAbout/>} />
 				</Routes>
 
 				<footer className={styles.footer}>
@@ -57,5 +68,3 @@ function App() {
 }
 
 export default App
-
-// React Pizza v2 23:57 

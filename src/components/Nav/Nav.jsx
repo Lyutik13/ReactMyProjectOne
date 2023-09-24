@@ -16,7 +16,7 @@ function Nav({ dark }) {
 				<li className={styles.navigation__link}>
 					<Link to="/ourCoffee">Our coffee</Link>
 				</li>
-				<li className={styles.navigation__link}>For your pleasure</li>
+				<li className={styles.navigation__link}><Link to="/forYourPleasure">For your pleasure</Link></li>
 			</ul>
 		</nav>
 	)
