@@ -6,6 +6,7 @@ import CoffeLine from '../../CoffeLine/CoffeLine'
 import Search from '../../Search/Search'
 import Card from '../../Card/Card'
 
+import aboutOurBeansImg from '../../../resources/img/about/aboutOurBeans-min.jpg'
 import styles from './OurCoffee.module.scss'
 
 export const OurCoffee = ({ bd }) => {
@@ -42,7 +43,7 @@ export const OurCoffee = ({ bd }) => {
 				<section className={styles.aboutOurBeans}>
 					<div className={styles.wrapper}>
 						<div className={styles.imgWrapper}>
-							<img src="img/about/aboutOurBeans-min.jpg" alt="aboutOurBeans" />
+							<img src={aboutOurBeansImg} alt="aboutOurBeans" />
 						</div>
 						<div className={styles.aboutOurBeans__block}>
 							<h3 className={styles.aboutOurBeans__title}>About our beans</h3>

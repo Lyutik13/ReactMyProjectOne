@@ -1,5 +1,6 @@
 import CoffeLine from '../CoffeLine/CoffeLine'
 
+import aboutItImg from '../../resources/img/about/aboutIt-min.jpg'
 import styles from './CardAbout.module.scss'
 
 function CardAbout({ country, price }) {
@@ -8,7 +9,7 @@ function CardAbout({ country, price }) {
 			<section className={styles.aboutOurBeans}>
 				<div className={styles.wrapper}>
 					<div className={styles.imgWrapper}>
-						<img src="img/about/aboutIt-min.jpg" alt="aboutIt-min" />
+						<img src={aboutItImg} alt="aboutIt-min" />
 					</div>
 					<div className={styles.aboutOurBeans__block}>
 						<h3 className={styles.aboutOurBeans__title}>About it</h3>

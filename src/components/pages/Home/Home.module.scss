@@ -2,7 +2,7 @@
 
 .header {
 	min-height: 640px;
-	background: url(../../../../public/img/header/headerBg-min.jpg) center center/cover
+	background: url(../../../resources/img/header/headerBg-min.jpg) center center/cover
 		no-repeat;
 	&__title {
 		color: $white;
@@ -70,7 +70,7 @@
 .ourBest {
 	padding-bottom: 110px;
 	min-height: 385px;
-	background: url(../../../../public/img/ourBest-min.jpg) center center/cover;
+	background: url(../../../resources/img/ourBest-min.jpg) center center/cover;
 }
 
 .cardWrapper {

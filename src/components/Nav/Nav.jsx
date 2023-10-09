@@ -1,12 +1,14 @@
 import { Link } from 'react-router-dom'
 
+import beansBlackImg from '../../resources/img/coffee-beansBlack.svg'
+import beansWhiteImg from '../../resources/img/coffee-beansWhite.svg'
 import styles from './Nav.module.scss'
 
 function Nav({ dark }) {
 	return (
 		<nav className={dark ? styles.navigationDark : styles.navigation}>
 			<img
-				src={dark ? 'img/coffee-beansBlack.svg' : 'img/coffee-beansWhite.svg'}
+				src={dark ? beansBlackImg : beansWhiteImg}
 				alt="coffeLogo"
 			/>
 			<ul className={styles.navigation__links}>
