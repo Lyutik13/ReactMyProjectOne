@@ -1,17 +1,23 @@
 {
   "files": {
     "main.css": "/ReactMyProjectOne/static/css/main.d49c7320.css",
-    "main.js": "/ReactMyProjectOne/static/js/main.0e48c940.js",
+    "main.js": "/ReactMyProjectOne/static/js/main.5d6b1333.js",
     "static/media/ourBest-min.jpg": "/ReactMyProjectOne/static/media/ourBest-min.572a1b51c9a101dae1e0.jpg",
     "static/media/headerBg-min.jpg": "/ReactMyProjectOne/static/media/headerBg-min.dc8e6fcd97281757e354.jpg",
     "static/media/OurCoffee-min.jpg": "/ReactMyProjectOne/static/media/OurCoffee-min.b47206266156e9950795.jpg",
     "static/media/forYourPleasure-min.jpg": "/ReactMyProjectOne/static/media/forYourPleasure-min.fda5d132393e74f7a569.jpg",
+    "static/media/aboutIt-min.jpg": "/ReactMyProjectOne/static/media/aboutIt-min.1cbcdec3034ccf9841a4.jpg",
+    "static/media/not_found.jpg": "/ReactMyProjectOne/static/media/not_found.82952555d8ac87220e58.jpg",
+    "static/media/coffee-beansWhite.svg": "/ReactMyProjectOne/static/media/coffee-beansWhite.ef5005f6202f5cda79a76e94fd3153e3.svg",
+    "static/media/coffee-beansBlack.svg": "/ReactMyProjectOne/static/media/coffee-beansBlack.d70833a7ca219ddc164ac5fbb306d66d.svg",
+    "static/media/lineWhite.svg": "/ReactMyProjectOne/static/media/lineWhite.e58bfcf1c8591d6a5a25c6432ab5caeb.svg",
+    "static/media/lineDark.svg": "/ReactMyProjectOne/static/media/lineDark.95ee549cd0b658c3dc5de885fe06e757.svg",
     "index.html": "/ReactMyProjectOne/index.html",
     "main.d49c7320.css.map": "/ReactMyProjectOne/static/css/main.d49c7320.css.map",
-    "main.0e48c940.js.map": "/ReactMyProjectOne/static/js/main.0e48c940.js.map"
+    "main.5d6b1333.js.map": "/ReactMyProjectOne/static/js/main.5d6b1333.js.map"
   },
   "entrypoints": [
     "static/css/main.d49c7320.css",
-    "static/js/main.0e48c940.js"
+    "static/js/main.5d6b1333.js"
   ]
 }
